@@ -1,0 +1,75 @@
+# Format:
+# source destination weight (time in minutes)
+
+# =========================
+# M2 Line (Yenikapı - Hacıosman)
+# =========================
+Yenikapi Vezneciler 3
+Vezneciler Halic 3
+Halic Sishane 2
+Sishane Taksim 3
+Taksim Osmanbey 3
+Osmanbey Sisli-Mecidiyekoy 3
+Sisli-Mecidiyekoy Gayrettepe 3
+Gayrettepe Levent 2
+Levent 4-Levent 2
+4-Levent Sanayi-Mahallesi 3
+Sanayi-Mahallesi ITU-Ayazaga 3
+ITU-Ayazaga Ataturk-Oto-Sanayi 3
+Ataturk-Oto-Sanayi Darussafaka 4
+Darussafaka Haciosman 3
+
+# =========================
+# M4 Line (Kadikoy - Sabiha Gokcen)
+# =========================
+Kadikoy Ayrilik-Cesmesi 3
+Ayrilik-Cesmesi Acibadem 3
+Acibadem Unalan 3
+Unalan Goztepe 3
+Goztepe Yenisahra 3
+Yenisahra Kozyatagi 2
+Kozyatagi Bostanci 4
+Bostanci Kucukyali 3
+Kucukyali Maltepe 3
+Maltepe Huzurevi 2
+Huzurevi Gulsuyu 3
+Gulsuyu Esenkent 3
+Esenkent Hastane-Adliye 3
+Hastane-Adliye Soganlik 3
+Soganlik Kartal 3
+Kartal Pendik 4
+Pendik Tavsantepe 4
+Tavsantepe Sabiha-Gokcen 5
+
+# =========================
+# Marmaray Line (with -M suffix)
+# =========================
+Halkali Mustafa-Kemal-M 4
+Mustafa-Kemal-M Kucukcekmece-M 4
+Kucukcekmece-M Florya-M 5
+Florya-M Yesilkoy-M 4
+Yesilkoy-M Bakirkoy-M 5
+Bakirkoy-M Yenikapi-M 7
+Yenikapi-M Sirkeci-M 4
+Sirkeci-M Uskudar-M 5
+Uskudar-M Ayrilik-Cesmesi-M 3
+Ayrilik-Cesmesi-M Bostanci-M 6
+Bostanci-M Maltepe-M 4
+Maltepe-M Kartal-M 5
+Kartal-M Pendik-M 5
+
+# =========================
+# Transfer edges (very important!)
+# =========================
+# Metro ↔ Marmaray connections
+Yenikapi Yenikapi-M 2
+Ayrilik-Cesmesi Ayrilik-Cesmesi-M 2
+Bostanci Bostanci-M 3
+Maltepe Maltepe-M 3
+Kartal Kartal-M 3
+Pendik Pendik-M 3
+Uskudar Uskudar-M 2
+
+# Example additional transfers
+Taksim Kabatas 4
+Sisli-Mecidiyekoy Mecidiyekoy 2
